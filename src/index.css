@@ -1,13 +1,56 @@
-body {
+.App{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,#2f5676,#4a4576);
+  height: 100vh;
+  color: #ffffff;
+  text-align: center;
+}
+.login-ui{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.username, .password{
+  width: 40vw;
+  height: 5vh;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.username-input-field{
+  position: relative;
+}
+.bi-person{
+  position: absolute;
+  color: black;
+  right: 2px;
+  top: 20px;
+  padding: 12px 12px;
+  pointer-events: none;
+}
+.password-input-field{
+  position: relative;
+}
+.bi-lock-fill{
+  position: absolute;
+  color: black;
+  right: 2px;
+  top: 20px;
+  padding: 12px 12px;
+  pointer-events: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login-button{
+  background-color: #2ecc71;
+  border: none;
+  width: 40vw;
+  height: 5vh;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
